@@ -5,9 +5,9 @@ class car
  
  void show(){
 	 
- 		System.out.println("the car number :"+ num);
-		System.out.println("the car gas	:"+ gas);
-		System.out.print("\n");	
+    System.out.println("the car number :"+ num);
+    System.out.println("the car gas	:"+ gas);
+    System.out.print("\n");	
  }
 }
  
@@ -15,11 +15,10 @@ class PROG2
 {
 	public static void main(String ages[])
 	{
-		car car1 = new car();
-		car1.num = 1234;
-		car1.gas = 20.5;
+	   car car1 = new car();
+	   car1.num = 1234;
+	   car1.gas = 20.5;
 		
-		car1.show();
-		
+	   car1.show();
 	}
 }
