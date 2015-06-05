@@ -7,19 +7,18 @@ public class PROG2
     public static void main(String[] arg)
     {
         Scanner sc = new Scanner(System.in);
-		int count = 0;
+	int count = 0;
 
-		do{
-        System.out.print("Type a number: ");	
-        String str = sc.nextLine();
+	do{
+        	System.out.print("Type a number: ");	
+        	String str = sc.nextLine();
 
 		System.out.println("output the number :"+str);	
-		
 		count++;
-		}while(count != 5);
-
 		
-		System.out.println("\n");
-	}
+	}while(count != 5);
+
+	System.out.println("\n");
+     }
 		
 }
