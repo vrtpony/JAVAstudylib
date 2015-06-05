@@ -1,0 +1,12 @@
+//array 宣告
+int box[] = new int[5];
+
+//array 初始化
+int box[] = {10,20,30,40,50}; = Array index {0.1.2.3.4}
+
+//輸入宣告
+Scanner sc = new Scanner(System.in);
+int num = sc.nextInt(); //整數輸入
+String str = sc.netInt(); //字串輸入
+
+//
