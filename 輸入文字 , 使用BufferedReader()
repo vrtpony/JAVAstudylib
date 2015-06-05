@@ -1,3 +1,4 @@
+//輸入文字 , 使用BufferedReader()
 // java 輸入字串,輸出字串 範例
 
 import java.io.*;
