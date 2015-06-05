@@ -1,0 +1,28 @@
+
+//使用scanner
+//java 輸入字串,整數,輸出字串,輸出整數
+
+import java.util.Scanner;
+ 
+public class sample4
+{
+    public static void main(String[] arg)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type a word: ");
+        String STR1 = sc.nextLine();  //輸入字串
+        System.out.println("Type an integer: ");
+        
+        int INT1 = sc.nextInt();//輸入整數
+        System.out.println("Type two decimals: ");
+        
+        double DOUBLE1 = sc.nextDouble();//輸入浮點數
+        double DOUBLE2 = sc.nextDouble();//輸入福點數
+        
+        System.out.println("\n");
+        System.out.println("Word: " + STR1 + "\n" + "integer: " + INT1 + "\n"+"decimals: " + DOUBLE1 + ", " + DOUBLE2);
+        sc.close();
+        
+        System.out.println("\n");
+    }
+}
