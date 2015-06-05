@@ -65,3 +65,26 @@ class PROG2
    }
 }
 
+//使用class, 呼叫method
+class car
+{
+   int num;
+   double gas;
+   
+   void show(){
+      System.out.println("the car number:"+num);
+      System.out.println("the car gas:"+gas);
+   }
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+      car1.num = 12345;
+      car1.gas = 124.0;
+      car1.show();
+   }
+}
+
