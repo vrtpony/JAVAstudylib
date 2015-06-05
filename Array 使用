@@ -6,29 +6,29 @@ public class PROG2
 {
     public static void main(String[] arg)
     {
-		int i;
-		int box[];
-		box = new int[25];
+	int i;
+	int box[];
+	box = new int[25];
 
-	    for(i=0; i<25; i++){
-			   if(i%5 == 0){
-				    System.out.print("\n");
-			   }
-		  System.out.print(" "+box[i]);	
-	    }
-		System.out.println("\n");
-		
-		   for(i=0; i<25; i++){
-		      box[i] = i*10;
-	     }
-	    
-	    for(i=0; i<25; i++){
-			   if(i%5 == 0){
-				   System.out.print("\n");
-			   }
-		  System.out.print(" "+box[i]);	
-	    }
-		System.out.println("\n");
+	for(i=0; i<25; i++){
+	   if(i%5 == 0){
+  	   System.out.print("\n");
+	   }
+	System.out.print(" "+box[i]);	
 	}
+     System.out.println("\n");
+		
+	for(i=0; i<25; i++){
+	   box[i] = i*10;
+	}
+	    
+	for(i=0; i<25; i++){
+	   if(i%5 == 0){
+	   System.out.print("\n");
+	   }
+	System.out.print(" "+box[i]);	
+	}
+     System.out.println("\n");
+     }
 		
 }
