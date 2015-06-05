@@ -4,9 +4,19 @@ int box[] = new int[5];
 //array 初始化
 int box[] = {10,20,30,40,50}; = Array index {0.1.2.3.4}
 
+//box1 Array copy to box ,這邊要注意的是陣列資料指定給另外一個陣列變數時，不會產生全新的陣列內容，都是參考同一份陣列資料，
+//只要資料被動過，兩份資料都會同時修改到
+int box1[];
+box1 =box; 
+
 //輸入宣告
 Scanner sc = new Scanner(System.in);
 int num = sc.nextInt(); //整數輸入
 String str = sc.netInt(); //字串輸入
 
-//
+//透過array.length, 可以知道陣列長度
+
+for(i=0; i<box.length; i++){	
+  System.out.println(+box[i]);	
+}
+System.out.println("intput count " + box.length);
