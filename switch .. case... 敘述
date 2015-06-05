@@ -42,7 +42,7 @@ public class sample4
 
 			default:
 				System.out.println("input error !! ");			
-
+				break;
 		}
 		
 		System.out.println("\n");
