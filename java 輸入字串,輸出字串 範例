@@ -1,0 +1,17 @@
+// java 輸入字串,輸出字串 範例
+
+import java.io.*;
+
+class sample4
+{
+	public static void main(String args[]) throws IOException
+	{
+		System.out.println(" input String : ");
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String str = br.readLine();
+		
+		System.out.println(" input String display : " + str);
+	}
+}
