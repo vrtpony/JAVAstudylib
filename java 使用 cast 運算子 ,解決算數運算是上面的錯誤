@@ -1,0 +1,25 @@
+//使用 cast 運算子 ,解決算數運算是上面的錯誤
+
+import java.io.*;
+
+class sample4
+{
+	public static void main(String args[]) throws IOException
+	{
+		int num1 = 5;
+		int num2 = 4;
+		
+		double div;
+		
+		div = num1 / num2 ;
+		
+		System.out.println("div = num1 / num2 = " + div);
+		System.out.println("\n");
+
+		div = (double)num1 /(double)num2;
+
+		System.out.println("div = num1 / num2 = " + div);
+		System.out.println("\n");
+
+	}
+}
