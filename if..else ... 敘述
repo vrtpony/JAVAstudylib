@@ -1,0 +1,22 @@
+//java if..else
+
+import java.util.Scanner;
+ 
+public class sample4
+{
+    public static void main(String[] arg)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type a number: ");
+
+        int num = sc.nextInt();
+
+		if(num % 2 == 0){
+			System.out.println("the number is even");
+		}else{
+			System.out.println("the number is odd");
+		}
+		System.out.println("\n");
+	}
+		
+}
