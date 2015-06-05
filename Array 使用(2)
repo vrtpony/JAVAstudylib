@@ -6,34 +6,29 @@ public class PROG2
 {
     public static void main(String[] arg)
     {
-
-
-
-
         System.out.print("Type a number: ");	
 
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-		//順序不能錯,num先出現,才能夠宣告box new int[num]
-		int i;
-		int box[];
-		box = new int[num];
+	//順序不能錯,num先出現,才能夠宣告box new int[num]
+	int i;
+	int box[];
+	box = new int[num];
 		
-		for(i=0; i<num; i++){
-           
+	for(i=0; i<num; i++){
            System.out.print("Type a grade: ");	
            int num2 = sc.nextInt();
            box[i]=num2;
-		}
+	}
 
-		System.out.println("\n");
+	System.out.println("\n");
 
-	    for(i=0; i<num; i++){	
-			System.out.println(+box[i]);	
-	    }
+	for(i=0; i<num; i++){
+	   System.out.println(+box[i]);	
+	}
 		
-		System.out.println("\n");
+	System.out.println("\n");
 	}
 		
 }
