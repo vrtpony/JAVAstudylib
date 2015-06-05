@@ -1,0 +1,23 @@
+class car
+{
+	 int num;     //車牌號碼
+	 double gas;  //汽油量
+}
+
+//透過car 類別可以複製出很多車子的車牌號碼與汽油量
+ 
+class PROG2
+{
+	public static void main(String ages[])
+	{
+		car car1 = new car(); //呼叫car類別, 宣告car1
+		car1.num = 1234;
+		car1.gas = 20.5;
+		
+		System.out.println("the car number :"+car1.num);
+		System.out.println("the car gas	:"+car1.gas);
+		System.out.print("\n");
+		
+	}
+	 
+}
