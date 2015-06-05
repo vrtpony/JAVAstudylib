@@ -6,27 +6,23 @@ public class PROG2
     {
 
       System.out.print("Type a number: ");	
+      
+	int i,j;
+	int box[][];
+	box = new int[5][5];
 
-
-
-		  int i,j;
-		  int box[][];
-		  box = new int[5][5];
-
-		for(i=0; i<5; i++){
-		   for(j=0; j<5; j++){
-			   box[i][j]=i*j;
-			}
-		}
-
-		for(i=0; i<5; i++){
-		   for(j=0; j<5; j++){
-			   System.out.println("box"+"["+i+"]"+"["+j+"] = "+box[i][j]);
-			}
-		}
-
-		System.out.println("\n");		
-		
+	for(i=0; i<5; i++){
+	   for(j=0; j<5; j++){
+	      box[i][j]=i*j;
+	   }
 	}
+
+	for(i=0; i<5; i++){
+	   for(j=0; j<5; j++){
+	      System.out.println("box"+"["+i+"]"+"["+j+"] = "+box[i][j]);
+	    }
+	}
+	System.out.println("\n");		
+      }
 		
 }
