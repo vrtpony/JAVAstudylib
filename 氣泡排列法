@@ -12,45 +12,45 @@ public class PROG2
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-		int i;
-		int box[];
-		box = new int[num];
+	int i;
+	int box[];
+	box = new int[num];
 		
-		for(i=0; i<num; i++){
+	for(i=0; i<num; i++){
            
            System.out.print("Type a grade: ");	
            int num2 = sc.nextInt();
            box[i]=num2;
-		}
-
-		System.out.println("\n");
-
-	    for(i=0; i<box.length; i++){	
-			System.out.println(+box[i]);	
-	    }
-		System.out.println("\n");
-		
-		int j,temp;
-		
-		//box[i] = 0,1,2,3,4
-		//box[j] = 1,2,3,4,5
-		
-		for(i=0; i<box.length; i++){
-			for(j=i+1; j<box.length; j++){
-				if(box[j] > box[i]){
-					temp = box[j];
-					box[j] = box[i];
-					box[i] = temp;
-				}
-			}
-		}
-		System.out.println("\n");
-
-	    for(i=0; i<box.length; i++){	
-			System.out.println(+box[i]);	
-	    }
-		System.out.println("\n");		
-		
 	}
+
+	System.out.println("\n");
+
+	for(i=0; i<box.length; i++){	
+	   System.out.println(+box[i]);	
+	}
+	System.out.println("\n");
+		
+	int j,temp;
+		
+	//box[i] = 0,1,2,3,4
+	//box[j] = 1,2,3,4,5
+		
+	for(i=0; i<box.length; i++){
+	   for(j=i+1; j<box.length; j++){
+	      if(box[j] > box[i]){
+		temp = box[j];
+		box[j] = box[i];
+		box[i] = temp;
+	      }
+	   }
+	}
+	System.out.println("\n");
+
+	for(i=0; i<box.length; i++){	
+	   System.out.println(+box[i]);	
+	}
+	System.out.println("\n");		
+		
+   }
 		
 }
