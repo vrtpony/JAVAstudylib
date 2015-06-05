@@ -23,9 +23,9 @@ System.out.println("intput count " + box.length);
 
 //array 交換值
 int i,j,temp;
+box[j] = temp;
 temp = box[i];
 box[j] = box[i];
-box[j] = temp;
 
 //二維陣列
 int box[][];
@@ -44,3 +44,24 @@ int box[][] =  { {1,2,3},{4,5},{7,8,9,10} }; //必須要加入大括號
 for(i=0; i<box.length; i++){
    System.out.println(test[i].length);
 }
+
+//建立class 類別觀念
+
+class car
+{
+  int num;    //車_牌號碼
+  double gas; //車_汽油量
+}
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+      car1.num = 2222;
+      car1.gas = 125.0;
+      
+      System.out.println("the car number:+car1.num);
+      System.out.printfln("the car gas:+car1.gas);
+   }
+}
+
