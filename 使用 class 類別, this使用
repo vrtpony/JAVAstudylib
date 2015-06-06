@@ -6,13 +6,13 @@ class car
    double gas;
    
    void show(){
-      System.out.println("the car number:"+ this.num);
+      System.out.println("the car number:"+ this.num); //也可以只有num
       System.out.println("the car gas:"+ this.gas);
    }
    //可以透過method 在呼叫method
    void carlist(){
 	  System.out.println("display car spec:\n ");
-	  show();
+	  this.show(); 	//也可以只有show()
    }
 }
 
