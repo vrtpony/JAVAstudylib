@@ -12,7 +12,7 @@ box1 =box;
 //輸入宣告
 Scanner sc = new Scanner(System.in);
 int num = sc.nextInt(); //整數輸入
-String str = sc.netInt(); //字串輸入
+String str = sc.nextLine(); //字串輸入
 
 //透過array.length, 可以知道陣列長度
 
@@ -24,12 +24,13 @@ System.out.println("intput count " + box.length);
 //array 交換值
 int i,j,temp;
 box[j] = temp;
-temp = box[i];
 box[j] = box[i];
+box[i] = temp;
 
 //二維陣列
 int box[][];
 box = new int[5][5];
+//也可以寫成
 int box[][] = new int[5][5];
 int box[][] = {1,2,3,4,5},{6,7,8,9,10};
 
