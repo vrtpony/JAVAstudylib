@@ -1,3 +1,5 @@
+//this 可以使用在同一個field
+
 class car
 {
    int num;
@@ -7,6 +9,7 @@ class car
       System.out.println("the car number:"+ this.num);
       System.out.println("the car gas:"+ this.gas);
    }
+   //可以透過method 在呼叫method
    void carlist(){
 	  System.out.println("display car spec:\n ");
 	  show();
