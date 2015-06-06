@@ -3,7 +3,7 @@ class car
    private int num;
    private double gas;
    
-   
+   //透過constructor ,來初始化變數值
    public car(){
    
 	num = 0;
