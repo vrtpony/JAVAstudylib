@@ -28,10 +28,9 @@ class PROG2
 {
    public static void main(String args[])
    {
-      car car1 = new car();
-	  car car2 = new car(1234, 125.0);
+      car car1 = new car();	        //只要宣告就會自動呼叫沒有參數的constructor
+      car car2 = new car(1234, 125.0); 	//只要宣告就會自動呼叫2個參數的constructor
 
-	 
       System.out.println("\n");
    }
 }
