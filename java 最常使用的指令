@@ -134,8 +134,15 @@ class car
 //在同一個類別可以定義很多個method 相同名稱 
 //但是引數個數與資料型態必須要不一樣
 
-   public void setCar(double g){}
-   public void setCar(int n){}
-   public void setCar(int n, double g){}
+當使用method 多載化時，每個method型態或[引數個數絕對要不相同，否則會造成執行結果的嚴重錯誤
+
+   public void setCar(double g){.... }
+   public void setCar(int n){....}
+   public void setCar(int n, double g){.....}
+
+下面是錯誤的使用方法：
+
+int setCar (int n){.....}
+void setCar (int n){......}   
 
 
