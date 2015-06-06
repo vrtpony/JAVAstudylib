@@ -131,3 +131,11 @@ class car
   //method 設定 public ,公有成員
   //只能透過method 設定 public 才能夠存取private ,為了避免不合法字元輸入造成程式系統當機
 
+//在同一個類別可以定義很多個method 相同名稱 
+//但是引數個數與資料型態必須要不一樣
+
+   public void setCar(double g){}
+   public void setCar(int n){}
+   public void setCar(int n, double g){}
+
+
