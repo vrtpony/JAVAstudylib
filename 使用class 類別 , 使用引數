@@ -1,0 +1,44 @@
+class car
+{
+   int num;
+   double gas;
+   
+   //建立 method , 使用引數
+   void setNum(int n){    
+	   num = n;
+	   System.out.println("the car number:"+this.num);
+	   }
+	   
+   //建立 method , 使用引數
+   void setGas(double g){
+	   gas = g;
+	   System.out.println("the car gas:"+this.gas);
+   }
+   
+    //建立 method  
+   void show(){
+	  System.out.print("\n");
+      System.out.println("the car number:"+ this.num);
+      System.out.println("the car gas:"+ this.gas);
+   }
+   
+   //建立 method , 呼叫method
+   void carlist(){
+	  System.out.println("\n");
+	  System.out.print("display car spec: ");
+	  this.show();
+   }
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+      car1.setNum(1234);   
+      car1.setGas(125.0);
+	    car1.show();
+      car1.carlist();
+      System.out.println("\n");
+   }
+}
