@@ -89,3 +89,33 @@ class PROG2
    }
 }
 
+//使用class ,this的使用
+
+class car 
+{
+    int num;
+    double gas;
+
+    //使用class, 使用引數, 呼叫方法 car1.SetNum(1234);
+    void setNum(int n){     
+       num = n;
+       System.out.println(this.num);
+    }
+ 
+    //使用class, 呼叫方法 car1.show();   
+    void show(){
+    System.out.println(this.num);
+    System.out.println(this.gas);
+    }
+    
+    //使用class, 雙重呼叫方法 car1.carList();   
+    void carList(){
+       this.show();
+    }
+}
+
+//method 的參數可以有很多個, 但是傳回值只能有一個
+
+  
+
+
