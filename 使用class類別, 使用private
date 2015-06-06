@@ -1,3 +1,10 @@
+//只能透過method 設定 public 才能夠存取private ,為了避免不合法字元輸入造成程式系統當機
+//private 在該class(類別)之外, 不能對私有成員進行存取
+//field 設定 private ,私有成員
+//method 設定 public ,公有成員
+
+
+
 class car
 {
    private int num;    //只要使用private ,就只能搭配public來呼叫使用 ,也無法使用car1.num 
