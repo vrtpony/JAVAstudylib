@@ -1,0 +1,29 @@
+class car
+{
+   private int num;    //只要使用private ,就只能搭配public來呼叫使用 ,也無法使用car1.num 
+   private double gas; //只要使用private ,就只能搭配public來呼叫使用 ,也無法使用car1.gas 
+   
+   public void setNum(int n){
+	   
+	  num = n;
+	  System.out.println("the car number  = "+this.num);
+	   }
+   public void setGas(double g){
+	
+	  gas = g;
+	  System.out.println("the car gas  = "+this.gas);
+   }
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+  
+	  car1.setNum(1234);
+	  car1.setGas(125.5);
+	 
+      System.out.println("\n");
+   }
+}
