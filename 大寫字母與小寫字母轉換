@@ -1,0 +1,24 @@
+//輸入字母字串轉成大寫
+//輸入字母字串轉成小寫
+
+import java.util.Scanner;
+
+class PROG2
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("type to String: ");
+		String str = sc.nextLine();
+		
+		String stru = str.toUpperCase();
+		String strl = str.toLowerCase();
+		
+		
+		System.out.println("Converted to Uppercase: "+stru);
+		System.out.println("Converted to Lowercase: "+strl);
+		System.out.println();
+		
+	}
+}
