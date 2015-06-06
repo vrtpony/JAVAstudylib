@@ -10,12 +10,12 @@ class car
 	   
 	  num = n;
 	  System.out.println("the car number  = "+this.num);
-	   }
+   }
 
    public void setCar(double g){
 	   gas = g;
 	   System.out.println("the car gas = "+this.gas);
-       }
+   }
 
    public void setCar(int n, double g){
 	   
@@ -23,7 +23,7 @@ class car
 	   gas = g;  
 	   System.out.print("the car number = "+this.num + " ; ");
 	   System.out.println("the car gas = "+this.gas);
-       }
+    }
 
 }
 
