@@ -1,0 +1,18 @@
+//取得字串長度和其中的文字
+class PROG2
+{
+	public static void main(String args[])
+	{
+		String str = new String("Hello"); //也可以使用String str = "Hello";
+		
+		char char1 = str.charAt(0);
+		char char2 = str.charAt(1);
+		
+		int len = str.length();
+		
+		System.out.println(char1);
+		System.out.println(char2);
+		System.out.println(len);
+		
+	}
+}
