@@ -36,14 +36,14 @@ class PROG2
    public static void main(String args[])
    {
       car car1 = new car();
-	  car1.setCar(1000, 100.0);
-	  System.out.println("\n");
+      car1.setCar(1000, 100.0);
+      System.out.println("\n");
 
       car car2 = new car();
-	  car2.setCar(1001, 110.0);	  
+      car2.setCar(1001, 110.0);	  
       System.out.println("\n");
       
-	  car.createCarSum(); //設定直接使用car 類別呼叫
+      car.createCarSum(); //設定直接使用car 類別呼叫
 	 
       System.out.println("\n");
    }
