@@ -1,0 +1,52 @@
+
+class car
+{
+	private int num;        //使用基本型態的變數
+	private double gas;     //使用基本型態的變數
+	private String carname; //使用String 的類別型態的變數 
+	private static int sum; //類別變數
+	
+	public car(){
+		num = 0;
+		gas = 0;
+		carname = "沒有名稱";
+	}
+	
+	public void setCar(int n, double g){
+		num = n;
+		gas = g;
+		sum++;
+	}
+	
+	//只能單獨呼叫才能夠使用,才能夠對字串做處理
+	public void setCarName(String nm){ 
+		carname = nm;
+	}
+
+	
+	public void show(){
+	
+	   System.out.println("這台車的車牌號碼:"+this.num);
+	   System.out.println("這台車的排氣量:"+this.gas);
+	   System.out.println("這台車的名字:"+this.carname);
+	   System.out.println("出廠編號:"+sum);
+	}	
+}	
+class PROG2
+{
+	public static void main(String args[])
+	{
+		int number = 1234;
+		double gasoline = 20.5;
+		String str = "豐田";
+		
+		car car1 = new car();
+		
+		car1.setCar(number, gasoline);
+		car1.setCarName(str);
+		
+		car1.show();
+		
+		
+	}
+}
