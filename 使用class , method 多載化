@@ -1,0 +1,42 @@
+//在同一個類別可以定義很多個method 相同名稱 
+//但是引數個數與資料型態必須要不一樣
+
+class car
+{
+   private int num;
+   private double gas;
+   
+   public void setCar(int n){
+	   
+	  num = n;
+	  System.out.println("the car number  = "+this.num);
+	   }
+
+   public void setCar(double g){
+	   gas = g;
+	   System.out.println("the car gas = "+this.gas);
+       }
+
+   public void setCar(int n, double g){
+	   
+	   num = n;
+	   gas = g;  
+	   System.out.print("the car number = "+this.num + " ; ");
+	   System.out.println("the car gas = "+this.gas);
+       }
+
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+  
+	  car1.setCar(10);
+	  car1.setCar(10.0);
+	  car1.setCar(10, 10.0);
+	 
+      System.out.println("\n");
+   }
+}
