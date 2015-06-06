@@ -32,7 +32,6 @@ class PROG2
 	  
       System.out.println("the car number + 100 = "+car1.num);
       System.out.println("the car gas + 100 = "+car1.gas);
-	  
       System.out.println("\n");
    }
 }
