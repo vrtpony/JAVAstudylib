@@ -1,0 +1,32 @@
+class car
+{
+   private int num;
+   private double gas;
+   
+   
+   public car(){
+   
+	num = 0;
+	gas = 0;
+		
+   }
+   public void show(){
+	   
+	   System.out.println("the  carNum :"+num);
+	   System.out.println("the  carNum :"+gas);
+
+	   }
+
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+  
+	  car1.show();
+	 
+      System.out.println("\n");
+   }
+}
