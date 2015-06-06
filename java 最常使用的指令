@@ -116,6 +116,13 @@ class car
 
 //method 的參數可以有很多個, 但是傳回值只能有一個
 
+    //使用class, 使用return, 呼叫方法 car1.getNum();
+    int getNum(){     
+       num = num + 100;
+       System.out.println(this.num);
+       return this.num;
+    }
+
   
 
 
