@@ -11,8 +11,8 @@ class car
    }
    //可以透過method 在呼叫method
    void carlist(){
-	  System.out.println("display car spec:\n ");
-	  this.show(); 	//也可以只有show()
+      System.out.println("display car spec:\n ");
+      this.show(); 	//也可以只有show()
    }
 }
 
