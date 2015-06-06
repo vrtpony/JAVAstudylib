@@ -1,0 +1,38 @@
+class car
+{
+   int num;
+   double gas;
+   
+   int RetNum(){
+	   
+	   num = num+100;
+	   return this.num;
+	   }
+   double RetGas(){
+	  
+	   gas = gas+100;
+	   return this.gas;
+   }
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+	  car1.num = 1234;
+	  car1.gas = 125.5;
+
+	  System.out.println("the car number  = "+car1.num);
+	  System.out.println("the car gas  = "+car1.gas);
+
+      System.out.println();	  
+	  car1.RetNum();
+	  car1.RetGas();
+	  
+	  System.out.println("the car number + 100 = "+car1.num);
+	  System.out.println("the car gas + 100 = "+car1.gas);
+	  
+      System.out.println("\n");
+   }
+}
