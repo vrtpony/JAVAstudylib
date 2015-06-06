@@ -1,0 +1,26 @@
+class car
+{
+   int num;
+   double gas;
+   
+   void show(){
+      System.out.println("the car number:"+ this.num);
+      System.out.println("the car gas:"+ this.gas);
+   }
+   void carlist(){
+	  System.out.println("display car spec:\n ");
+	  show();
+   }
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+      car1.num = 12345;
+      car1.gas = 100;
+
+      car1.carlist();
+   }
+}
