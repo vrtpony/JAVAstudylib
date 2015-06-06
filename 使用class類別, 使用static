@@ -1,0 +1,50 @@
+class car
+{
+	
+   private static int sum;	//static 在class內部讓全部物件共享使用
+   private int num;
+   private double gas;
+   
+   
+   public car(){
+   
+	num = 0;
+	gas = 0;
+	
+	System.out.println("create  car !!");
+	
+	sum++;	
+   }
+   
+   public void setCar(int n, double g){
+	   
+	num = n;
+	gas = g;   
+	   
+	System.out.println("the car num: "+this.num);
+	System.out.println("the car gas: "+this.gas);
+   }
+  
+   public static void createCarSum(){
+	  System.out.println("createCarSum = "+sum); //不能使用this.sum ,因為他是物件共享
+   }
+  
+}
+
+class PROG2
+{
+   public static void main(String args[])
+   {
+      car car1 = new car();
+	  car1.setCar(1000, 100.0);
+	  System.out.println("\n");
+
+      car car2 = new car();
+	  car2.setCar(1001, 110.0);	  
+      System.out.println("\n");
+      
+	  car.createCarSum(); //設定直接使用car 類別呼叫
+	 
+      System.out.println("\n");
+   }
+}
