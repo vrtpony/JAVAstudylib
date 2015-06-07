@@ -1,0 +1,85 @@
+
+class car
+{
+	private int num;
+	private double gas;
+	private String carname;
+	private static int sum;
+	
+	public car(){
+		num = 0;
+		gas = 0;
+		carname = "沒有名稱";
+	}
+	
+	public void setCar(int n, double g){
+		num = n;
+		gas = g;
+	}
+	public void setCarName(String nm){
+		carname = nm;
+	}
+
+	
+	public void show(){
+	
+	   sum++;
+	   System.out.println("這台車的車牌號碼:"+this.num);
+	   System.out.println("這台車的排氣量:"+this.gas);
+	   System.out.println("這台車的名字:"+this.carname);
+	   System.out.println("出廠編號:"+sum);
+	}	
+}	
+class SportCar extends car
+{
+	private int engine;
+	
+	public SportCar(){
+		engine = 0;
+    }
+    public void setSportCar(int e){
+		engine = e;
+		System.out.println("++新增 馬力:"+this.engine);
+	}
+}
+	
+
+class PROG2
+{
+	public static void main(String args[])
+	{	
+	
+		int i;
+			
+		String str1[] = new String[]{"豐田","奧迪","BMW","賓士","福斯"};	
+
+		SportCar sportCar = new SportCar();
+		car cars[] = new car[5];
+
+		for(i=0; i<cars.length; i++){
+			cars[i] = new car();
+		}
+
+		cars[0].setCar(1000,1500.0);
+		cars[1].setCar(1001,1600.0);
+		cars[2].setCar(1002,1700.0);
+		cars[3].setCar(1003,1800.0);
+		cars[4].setCar(1004,1900.0);
+
+		for(i=0; i<cars.length; i++){
+		cars[i].setCarName(str1[i]);
+		cars[i].show();
+	    System.out.println();		
+	    }
+
+//子類別sportCar 繼承父類別的method ,constructor 呼叫
+	    
+	    String str2 ="保時捷";
+	    
+	    sportCar.setCar(1005,2000.0);
+	    sportCar.setCarName(str2);
+	    sportCar.show();
+	    sportCar.setSportCar(500);
+	    System.out.println();
+	}
+}
