@@ -4,7 +4,7 @@ interface Carnum
 }
 interface Cargas extends Carnum 
 {
-	void  gshow();
+   void  gshow();
 }
 class Car implements Cargas
 {
