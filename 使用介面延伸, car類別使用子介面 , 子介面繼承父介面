@@ -1,0 +1,38 @@
+interface Carnum
+{
+   void nshow();
+}
+interface Cargas extends Carnum 
+{
+	void  gshow();
+}
+class Car implements Cargas
+{
+	private int num;
+	private double gas;
+	
+	public Car(int n, double g){
+		num = n;
+		gas = g;
+		System.out.println("汽車模組初始化 !!\n");
+	}
+	public void nshow(){
+		System.out.println("車牌號碼:"+num);
+	}
+	public void gshow(){
+		System.out.println("汽油量:"+gas+"\n");
+	}
+}
+
+class PROG2
+{
+	public static void main(String args[])
+	{
+		Car car1 = new Car(1234, 125.0);
+		
+		car1.nshow();
+		car1.gshow();
+		
+		
+    }	
+}
