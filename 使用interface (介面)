@@ -11,9 +11,9 @@ class Car implements Vehicle //interface 使用, implements
 	
 	public Car(int n, double g){
 		
-		num = n;
-		gas = g;
-		System.out.println("汽車參數初始化 !!");
+	num = n;
+	gas = g;
+	System.out.println("汽車參數初始化 !!");
 	}
 	
 	public void show()
@@ -28,12 +28,12 @@ class Plane implements Vehicle //interface 使用, implements
 	
 	public Plane(int f){
 		
-		flight = f;
-		System.out.println("飛機參數初始化 !!");
+	   flight = f;
+	   System.out.println("飛機參數初始化 !!");
 	}
 	public void show()
 	{
-		System.out.println("飛機班次: "+this.flight);
+	   System.out.println("飛機班次: "+this.flight);
 	}
 }
 
@@ -41,25 +41,17 @@ class PROG2
 {
 	public static void main(String args[])
 	{
-
-				
 	    Vehicle vc[] = new Vehicle[2]; //介面方法 show()
 	   
 	    vc[0] = new Car(1234, 50.5);   //car 類別物件	
-
 	    System.out.println();
 		
-		vc[1] = new Plane(932);		   //plane 類別物件
+	    vc[1] = new Plane(932);		   //plane 類別物件
+ 	    System.out.println();
 
-
+	     for(int i=0 ; i<vc.length; i++){
+		vc[i].show();
+	     }
 	    System.out.println();
-
-		for(int i=0 ; i<vc.length; i++){
-			vc[i].show();
-			
-		}
-
-	    System.out.println();
-		
 	}	
 }	
