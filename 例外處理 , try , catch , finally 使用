@@ -1,0 +1,27 @@
+class PROG2
+{
+	public static void main(String args[])
+	{
+	 	 try{
+				Car car1[] = new Car[4];
+		 					
+				car1[0] = new Car();
+				car1[1] = new Car();
+				car1[2] = new Car();
+				car1[3] = new Car();
+  
+				car1[0].setCar(1234, 125.0);
+				car1[1].setCar(1111, 125.0);
+				car1[222].setCar(2222, 125.0);   //陣列空間使用錯誤
+				car1[3].setCar(3333, 125.0);	 //這一行不會被執行到
+		 }
+		 catch(ArrayIndexOutOfBoundsException e) //列外變數類別 類別名稱
+		 {
+		 	System.out.println("偵測到錯誤 !!\n");	//例外發生處理方式;
+		 }
+		 finally //與例外無關,但最後一定會執行到的程式碼
+		 {
+			for(int i=0; i<=5; i++){System.out.println(i);}	
+         }		
+	}
+}
