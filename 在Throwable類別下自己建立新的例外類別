@@ -1,0 +1,55 @@
+class CarException extends Exception //在Throwable 類別宣告一個獨立例外類別  CarException
+{
+}
+class Car 
+{
+	private int num;
+	private double gas;
+	
+	public Car(){
+		num = 0;
+		gas = 0;
+		System.out.println("汽車模組初始化 !!\n");
+	}
+	//throws 宣告會拋出例外
+	public void setCar(int n, double g)throws CarException
+	{
+		if(g < 0){  //當gas = 負值就處裡例外
+			CarException e = new CarException();
+			throw e //特定條件下拋出例外
+		}else{
+			num = n;
+			gas = g;
+			System.out.println("車牌號碼:"+num);
+			System.out.println("汽油量:"+gas+"\n");
+		}
+	}
+}
+
+class PROG2
+{
+	public static void main(String args[])
+	{
+	 	 try{
+				Car car1[] = new Car[4];
+		 					
+				car1[0] = new Car();
+				car1[1] = new Car();
+				car1[2] = new Car();
+				car1[3] = new Car();
+  
+				car1[0].setCar(1234, 125.0);
+				car1[1].setCar(1111, 125.0);
+				car1[2].setCar(2222, -125.0);   //gas 輸入負值錯誤
+				car1[3].setCar(3333, 125.0);	 
+		 }
+		 catch(CarException e) //列外變數類別 類別名稱
+		 {
+		 	System.out.println("偵測到錯誤 !!\n" +e+"\n");	//例外發生處理方式;
+		 }
+		 finally //與例外無關,但最後一定會執行到的程式碼
+		 {
+			for(int i=0; i<=5; i++){System.out.println(i);}	
+         }		
+	}
+}
