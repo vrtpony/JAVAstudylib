@@ -1,0 +1,43 @@
+class Car extends Thread //延伸執行緒類別
+{
+	private String name;
+	
+	public Car(String nm)
+	{
+		name =nm;
+	}
+	public void run()
+	{
+		for(int i=0; i<5; i++){
+			try
+			{				 //必須要加入try ... catch排除例外 ,否則編譯器會認為是錯誤的
+				sleep(1000); //每隔一秒執行一次, 這個時候跑執行緒, main會先跑完,因為main 
+							 //加入暫停執行緒(200),其他執行緒(1000),而分工執行程序
+							 
+				System.out.println("正在進行"+this.name+"的處理");
+			}
+			catch(InterruptedException e){}
+		}
+	}
+}
+class PROG2
+{
+	public static void main(String args[])
+	{
+		Car car1 = new Car("1號車");
+		car1.start();				//啟動新的執行緒1
+		Car car2 = new Car("2號車");
+		car2.start();				//啟動新的執行緒2
+		Car car3 = new Car("3號車");
+		car3.start();				//啟動新的執行緒3
+		
+		for(int i=0; i<10; i++){
+			try
+			{
+				Thread.sleep(200); //暫停執行緒
+				System.out.println("正在進行main()的處理"); //執行緒
+			}
+			catch(InterruptedException e){}
+		}
+	}
+}
