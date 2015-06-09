@@ -11,7 +11,7 @@ class Car extends Thread //延伸執行緒類別
 		for(int i=0; i<5; i++){
 			try
 			{				 //必須要加入try ... catch排除例外 ,否則編譯器會認為是錯誤的
-				sleep(1000); //每隔一秒執行一次, 這個時候跑執行緒, main會先跑完,因為main 
+				sleep(1000)		 //每隔一秒執行一次, 這個時候跑執行緒, main會先跑完,因為main 
 							 //加入暫停執行緒(200),其他執行緒(1000),而分工執行程序
 							 
 				System.out.println("正在進行"+this.name+"的處理");
