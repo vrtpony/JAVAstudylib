@@ -1,0 +1,68 @@
+import java.util.Scanner;
+import java.io.*;
+
+class PROG2
+{
+	public static void main(String args[])
+	{
+		try{
+			int num;
+
+			System.out.print("輸入記錄的資料筆數:");
+			Scanner sc = new Scanner(System.in);
+			num = sc.nextInt();			 
+			System.out.println();
+
+			//寫入字串存儲txt檔案
+			PrintWriter pw = new PrintWriter
+			(new BufferedWriter(new FileWriter("test1.txt")));
+
+			int test[] = new int[num];
+			String str;
+			
+			for(int i=0; i<test.length ;i++){
+				
+			System.out.print("請輸入成績:");
+			test[i] = sc.nextInt(); 
+			pw.println(test[i]);	 
+			}
+		
+			System.out.println(" 資料寫入完畢 !!\n");
+			
+			pw.close(); 
+						
+			//讀取txt檔案的字串
+			BufferedReader br = new BufferedReader
+			(new FileReader("test1.txt"));
+			
+
+			
+			for(int i=0; i<test.length; i++){
+				str = br.readLine();
+				test[i] = Integer.parseInt(str);
+			}
+			int max = test[0];
+			int min = test[0];
+			for(int i=0; i<test.length; i++){
+				if(max < test[i])
+					max = test[i];
+				if(min > test[i])
+					min = test[i];
+				System.out.println(test[i]);
+			}
+			System.out.println("最高分是"+max+"分");
+			System.out.println("最低分是"+min+"分");
+
+			
+			br.close();
+			
+			System.out.println();
+			
+			
+		}
+		catch(IOException e)
+		{
+			System.out.println("輸出入錯誤 !!");
+		}
+	}
+}
