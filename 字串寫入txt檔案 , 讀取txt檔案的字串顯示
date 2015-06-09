@@ -1,0 +1,39 @@
+import java.io.*;
+
+class PROG2
+{
+	public static void main(String args[])
+	{
+		try{
+			//寫入字串存儲txt檔案
+			PrintWriter pw = new PrintWriter
+			(new BufferedWriter(new FileWriter("test1.txt")));
+			
+			pw.println("hello !!");
+			pw.println("GoodBye !!");
+			System.out.println(" 寫入資料 !!\n");
+			
+			pw.close(); 
+			
+			//讀取txt檔案的字串
+			BufferedReader br = new BufferedReader
+			(new FileReader("test1.txt"));
+			
+			String str1 = br.readLine();
+			String str2 = br.readLine();
+			
+			System.out.println("資料檔中的兩個字串是:");
+			System.out.println(str1);
+			System.out.println(str2);
+			
+			br.close();
+			
+			System.out.println();
+			
+		}
+		catch(IOException e)
+		{
+			System.out.println("輸出入錯誤 !!");
+		}
+	}
+}
